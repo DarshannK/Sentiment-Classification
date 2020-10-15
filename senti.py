@@ -4,6 +4,9 @@ import pickle
 from sklearn.naive_bayes import MultinomialNB, BernoulliNB
 from sklearn.svm import SVC, LinearSVC, NuSVC
 from nltk.classify import ClassifierI
+from statistics import mode
+from nltk.tokenize import word_tokenize
+
 
 class VoteClassifier(ClassifierI):
     def __init__(self, *classifiers):
