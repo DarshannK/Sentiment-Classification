@@ -1,6 +1,8 @@
 
 from nltk.classify.scikitlearn import SklearnClassifier
 import pickle
+import scikitlearn
+import keras
 from sklearn.naive_bayes import MultinomialNB, BernoulliNB
 from sklearn.svm import SVC, LinearSVC, NuSVC
 from nltk.classify import ClassifierI
